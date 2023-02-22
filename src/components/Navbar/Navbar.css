@@ -1,0 +1,32 @@
+.app__navbar {
+    background-color: lightgray;
+    display: flex;
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo-img {
+    height: 50px;
+}
+
+.app__navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#link {
+    margin: 0 10px;
+}
+
+#link-a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
