@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   padding-top:10vh;
-
+  overflow-x: hidden;
 }
 
 code {
@@ -244,7 +244,7 @@ button {
 @media only screen and (max-width: 750px) {
   .pricecards {
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
   }
 }
@@ -292,7 +292,7 @@ button {
   }
 
   #submit {
-    min-width: 20%;
+    min-width: 30%;
   }
 }
 
