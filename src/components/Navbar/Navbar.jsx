@@ -36,8 +36,13 @@ const Navbar = () => {
       </div>
 
       <div className="right_column">
+        <button className="launchapp">
+            Coming soon!
+        </button>
+        {/*
         <button className='signup'>Sign Up</button>
         <button className='launchapp'>Launch App</button>
+          */}
       </div>
 
       <div className="hamburger" onClick={handleClick}>

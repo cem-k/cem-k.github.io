@@ -14,8 +14,8 @@ const Header = () => {
                 </div>
             
         </div>
-        <p className='description'>Change your seat maps as you wish and as often you want in a few clicks with our easy-to-use solution.</p>
-        <button>Sign Up Now!</button>
+        <p className='description'>Create your seat maps as you wish and as often you want in a few clicks with our easy-to-use solution.</p>
+        <button>Coming soon!</button>
     </div>
 }
 

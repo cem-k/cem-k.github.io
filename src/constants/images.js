@@ -4,6 +4,8 @@ import createclass from '../assets/smg-createclass.png';
 import conditions from '../assets/smg-conditions.png';
 import dollarcoin from '../assets/dollar-coin.png';
 import timeicon from '../assets/timeicon.png';
+import manual from '../assets/smg-manual.webp';
+import makemap from '../assets/smg-makemap.png';
 
 export default {
     logo,
@@ -12,4 +14,6 @@ export default {
     conditions,
     dollarcoin,
     timeicon,
+    manual,
+    makemap
 }

@@ -28,17 +28,17 @@ const Benefits = () => {
   return (
     <div className="benefits">
         <div>
-            <p>Time saved</p>
+            <h2>Hours saved</h2>
             <FontAwesomeIcon icon="fa-regular fa-clock" size="4x"/>
             <p>2{nums[(count + 0) % nums.length]}{nums[(count + 2) % nums.length]}</p>
         </div>
         <div>
-            <p>Money saved</p>
+            <h2>Money saved</h2>
             <FontAwesomeIcon icon="fa-solid fa-piggy-bank" size="4x"/>
-            <p>4{nums[(count + 0) % nums.length]}{nums[(count + 2) % nums.length]}{nums[(count + 5) % nums.length]}</p>
+            <p>€4{nums[(count + 0) % nums.length]}{nums[(count + 2) % nums.length]}{nums[(count + 5) % nums.length]}</p>
         </div>
         <div>
-            <p>Schools saved ;)</p>
+            <h2>Schools</h2>
             <FontAwesomeIcon icon="fa-solid fa-school" size="4x"/>
             <p>1{nums[(count + 0) % nums.length]}{nums[(count + 2) % nums.length]}</p>
         </div>

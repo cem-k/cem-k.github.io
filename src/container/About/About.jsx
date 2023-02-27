@@ -1,35 +1,50 @@
-import React from 'react'
+import React from 'react';
+import { images } from '../../constants';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
     return (
         <div className="about" id="About">
             <div className='column'>
-                <div>
-                    <h1> Importance of moving students around</h1>
-                    <p>Moving students around in the classroom often is important for many reasons.
-
-                        It will teach them to get to know and work with all of their fellow students. That will reduce groupings and improve the class environment.
-                        It will help the teacher to better monitor student behavior and create a more positive learning environment.
-                        It will keep students engaged and prevent boredom, as it teaches them to work in different environments with different classmates.</p>
+                <div className="card manual">
+                    <h1>Go from this ...</h1>
+                    <br />
+                    <img src={images.manual} />
+                    <br /><br />
+                    <b>Avoid manual work</b>
+                    <p>
+                        These are the things teachers have to stress about when creating a new map:
+                    </p>
+                    <p>
+                        - Who should sit together<br />
+                        - Who should not sit close<br />
+                        - Who should sit in the front<br />
+                        - Who should sit in the back<br />
+                        - Everyone should get a new partner<br />
+                        - Everyone should get a new seat<br />
+                        <b>How can I make all of this work ?!</b>
+                    </p>
+                    <p>Teachers use approximately 30 minutes to make a manual map.</p>
                 </div>
 
-                <div>
-                    <h1>Why manual is time-consuming</h1>
-                    <p>There are many conditions that need to be taken into account before creating a seat map.
-                        To do them manually, and to make sure all conditions are met, 
-                        takes a lot of time. The seat map generator allows you to save your 
-                        student lists to the database. From there you simply choose your 
-                        conditions and the generator will output a random seat map, giving 
-                        you a seat map with your conditions in minutes.</p>
-                </div>
-
-                <div>
-                    <h1>Why manual is costly</h1>
-                    <p>Making a manual seat map is time-consuming and therefore also costs the schools 
-                        money. A teacher in Norway has an average hourly salary of €30. Based on 
-                        research conducted at Skullerud middle school in Oslo, Norway, teachers use 
-                        approximately 30 minutes to make a good seat map that takes everyone's needs 
-                        into account. That would equal a cost price of €15 for a single map.</p>
+                <div className="card generator">
+                    <h1>... to this</h1>
+                    <img src={images.makemap}/>
+                    <b>Save time</b>
+                    <p>
+                        
+                        To use the generator takes 2 minutes. 
+                        You simply upload your student list, choose your conditions, 
+                        and there you have a generated map, fully customizable.
+                    </p>
+                    <b>Save money</b>
+                    <p>
+                        A new map is on average generated every 3-4 weeks.
+                        A teacher in Norway has an average hourly salary of €30.
+                        That would equal a cost price of €400 per teacher per year for 
+                        manual work that can be automated and reduced from 30 minutes to 2 minutes.
+                        Saved time is saved money!
+                    </p>
                 </div>
             </div>
             <button>Learn More</button>

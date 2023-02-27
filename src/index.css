@@ -1,15 +1,73 @@
 body {
-  margin: 0;
-/*  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+  margin: 0em;
+  font: 1.2em/1.618 Inter, sans-serif;
+
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  
+  color: #224;
+
   font-family: 'Cabin', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   padding-top:10vh;
   overflow-x: hidden;
+  background-color: white;
 }
+
+
+p {
+  margin: 0;
+}
+
+
+
+.card {
+  max-width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em;
+  text-align: left;
+
+  border: 1px solid red;
+}
+
+
+.card.manual h1 {
+  font-size: 1.4em;
+}
+
+.card.generator h1 {
+  font-size: 1.6em;
+}
+
+.card b {
+  color: black;
+}
+
+.card h1 {
+  margin-top: 0;
+  color: rgb(254, 130, 67);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+.card p {
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+/* --------------------------------- */
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,6 +84,8 @@ button {
 .header {
   min-height: 60vh;
   padding-top: 8%;
+  border: 1px solid red;
+
 }
 
 .headertext{
@@ -35,6 +95,7 @@ button {
   font-size: 80px;
   font-weight: 600;
   margin-bottom: 0px;
+  margin-top: 0em;
 }
 
 .inner-headings {
@@ -100,7 +161,7 @@ button {
 
 .header button {
   padding: 1em;
-  background-color: white;
+  background-color: transparent;
   color: rgb(255, 129, 66);
   border: solid rgb(255, 129, 66) 1px;
   transition: 0.5s;
@@ -114,22 +175,30 @@ button {
 
 /* About */
 .about {
-  min-height: 60vh;
-  padding: 10%;
+  min-height: 40vh;
+  padding: 0 5em;
+  color: white;
+  border: 1px solid blue;
 }
 
 .column {
+  flex-grow: 1;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border: 1px solid green;
 }
 
 .column div {
-  width: 33%;
-  padding: 5%;
+  order: 1;
+  width: 40%;
+  border: 1px solid pink;
 }
 
 .column h1 {
-  font-size: 20px;
+  font-size: 2em;
+  color: black;
 }
 
 @media only screen and (max-width: 900px) {
@@ -137,12 +206,12 @@ button {
     flex-direction: column;
   }
   .column div {
-    width: 90%;
+    width: 100%;
   }
 } 
 
 .about button {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   border: solid rgb(255, 129, 66) 1px;
   color: rgb(255, 129, 66);
   padding: 10px 20px;
@@ -160,6 +229,8 @@ button {
   display: flex;
   justify-content: center;
   padding: 5% 10%;
+  background-color: white;
+
 }
 
 .benefits div {
@@ -167,10 +238,18 @@ button {
   width: 30%;
 }
 
-.benefits p {
-  font-size: 20px;
-  font-weight: 700;
+.benefits h2 {
+  font-size: 2em;
+  font-weight: bold;
   height: 10%;
+  margin-bottom: 1.5em;
+}
+
+.benefits p {
+  font-size: 2em;
+  font-weight: bold;
+  height: 10%;
+  margin-top: 0.5em;
 }
 
 @media only screen and (max-width: 700px) {
@@ -186,6 +265,8 @@ button {
 .demo {
   min-height: 80vh;
   padding: 5%;
+
+
 }
 
 .demo div {
@@ -194,10 +275,8 @@ button {
 }
 
 .demo img {
-  border: solid rgb(255, 129, 66) 5px;
   border-radius: 10px;
-  box-shadow: -5px 5px 15px grey;
-  max-width: 80%;
+  max-width: 50vw;
 }
 
 @media only screen and (max-width: 900px) {
@@ -208,9 +287,10 @@ button {
 
 /* Pricing */
 .pricing {
-  background-color: rgb(255, 129, 66);
+  background-color: white;
   min-height: 60vh;
-  padding: 5% 0%;
+  padding: 1em 0;
+  padding-bottom: 5em;
 }
 
 .pricecards {
@@ -227,18 +307,19 @@ button {
 .pricing button {
   margin: 0 2px;
   padding: 5px 10px;
+  margin-top: 2em;
 }
 
 .notactive {
-  background-color: rgb(255, 129, 66);
-  color: white;
-  border: solid white 1px;
+  background-color: transparent;
+  color: rgb(255, 129, 66);
+  border: solid rgb(255, 129, 66) 1px;
 }
 
 .active {
-  background-color: white;
-  color: black;
-  border: solid white 1px;
+  background-color: rgb(255, 129, 66);
+  color: white;
+  border: 2px solid rgb(247, 98, 23);
 }
 
 @media only screen and (max-width: 750px) {
@@ -258,12 +339,12 @@ button {
 
 .contact p {
  font-size: 20px;
- color: grey;
+ color: black;
  margin-bottom: 5%;
 }
 
 .contact label {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .contact input {
@@ -303,6 +384,7 @@ button {
   min-height: 5vh;
   padding: 0 2%;
   border-top: solid rgb(240, 240, 240) 2px;
+  color: black;
 }
 
 .left {
