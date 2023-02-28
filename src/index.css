@@ -33,7 +33,6 @@ p {
   margin: 2em;
   text-align: left;
 
-  border: 1px solid red;
 }
 
 
@@ -84,7 +83,6 @@ button {
 .header {
   min-height: 60vh;
   padding-top: 8%;
-  border: 1px solid red;
 
 }
 
@@ -178,7 +176,6 @@ button {
   min-height: 40vh;
   padding: 0 5em;
   color: white;
-  border: 1px solid blue;
 }
 
 .column {
@@ -187,13 +184,11 @@ button {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  border: 1px solid green;
 }
 
 .column div {
   order: 1;
   width: 40%;
-  border: 1px solid pink;
 }
 
 .column h1 {
@@ -230,11 +225,9 @@ button {
   justify-content: center;
   padding: 5% 10%;
   background-color: white;
-
 }
 
 .benefits div {
-  min-height: 30vh;
   width: 30%;
 }
 
@@ -265,7 +258,6 @@ button {
 .demo {
   min-height: 80vh;
   padding: 5%;
-
 
 }
 
