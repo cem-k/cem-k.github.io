@@ -13,7 +13,7 @@
 .left_column {
     width: 20%;
     display: flex;
-    padding: 10px;
+    border: 1px solid blue;
 }
 .middle_column {
     width: 60%;
@@ -29,16 +29,16 @@
     padding: 10px;
 }
 
-img {
+.logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 5px 10px;
+    margin: auto;
+    padding: 0;
+    border: 1px solid green;
+    max-height: 10vh;
 }
 
-#logo-img {
-    height: 50px;
-}
 
 .app__navbar-links {
     list-style: none;
