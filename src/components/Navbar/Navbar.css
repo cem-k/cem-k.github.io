@@ -1,32 +1,35 @@
 .app__navbar {
-    background-color: rgb(233, 233, 233, 0.9);
-    backdrop-filter: blur(10px);
+    background-color: white;
+    border-bottom: 1px solid rgb(224,228,231);
     display: flex;
     width: 100%;
     position: fixed;
     top: 0;
     box-shadow: 0px 0px 0px;
-    min-height: 10vh;
+    height: 8vh;
     z-index: 999;
 }
 
 .left_column {
-    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
     display: flex;
-    border: 1px solid blue;
 }
 .middle_column {
-    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .right_column {
     min-width: 20%;
+    max-width: 20%;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 10px;
+    padding: 0.6em;
+  
 }
 
 .logo {
@@ -34,9 +37,9 @@
     justify-content: flex-start;
     align-items: center;
     margin: auto;
-    padding: 0;
-    border: 1px solid green;
-    max-height: 10vh;
+    margin-left: 2em;
+    padding: 0em;
+    height: 6vh;
 }
 
 
@@ -69,8 +72,10 @@
 }
 
 .launchapp {
-    background-color: rgb(255, 129, 66);
-    color: white;
+    background: -webkit-linear-gradient(rgb(255, 129, 66), rgb(252, 83, 83));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border: 1px solid transparent;
     transition: 0.5s;
 }
@@ -108,9 +113,9 @@
 
 .hamburger span {
     display: block;
-    width: 30px;
+    width: 2em;
     height: 4px;
-    margin: 5px auto;
+    margin: 0.35em auto;
     background-color: #333;
   }
   
@@ -139,7 +144,7 @@
   }
 
   #sidebar-links{
-    font-size: 40px;
+    font-size: 2em;
     text-decoration: none;
     color: black;
   }
@@ -148,7 +153,7 @@
     background-color: transparent;
     cursor: pointer;
     text-align: right;
-    padding: 15px 15px;
+    padding: 1em 1em;
   }
   
   @media only screen and (max-width: 768px) {
@@ -157,12 +162,12 @@
     }
     
     .left_column {
-        width: 90%;
+        min-width: 80%;
     }
     .hamburger {
       display: block;
-      width: 10%;
-      padding: 20px 10px;
+      width: 20%;
+      margin: auto;
     }
   
     .sidebar {
