@@ -6,6 +6,7 @@ import dollarcoin from '../assets/dollar-coin.png';
 import timeicon from '../assets/timeicon.png';
 import manual from '../assets/smg-manual.png';
 import makemap from '../assets/smg-makemap.png';
+import classroom from '../assets/classroom.jpg';
 
 export default {
     logo,
@@ -15,5 +16,6 @@ export default {
     dollarcoin,
     timeicon,
     manual,
-    makemap
+    makemap,
+    classroom
 }

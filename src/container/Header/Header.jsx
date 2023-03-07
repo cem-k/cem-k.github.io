@@ -6,13 +6,13 @@ const Header = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       switch (scrollContent) {
-        case "cheap":
+        case "cheap!":
           setScrollContent("easy!");
           break;
-        case "easy":
+        case "easy!":
           setScrollContent("fast!");
           break;
-        case "fast":
+        case "fast!":
           setScrollContent("cheap!");
           break;
         default:
@@ -31,11 +31,12 @@ const Header = () => {
           {scrollContent}
         </span>
       </div>
-      <p className="description">
-        Create your seat maps in a few clicks, as often as you want, with our
-        easy-to-use solution.
-      </p>
-      <button>Coming soon!</button>
+      <div className="description">
+        <span>
+          Create your seat maps in a few clicks, as often as you want, with our
+          easy-to-use solution.
+        </span>
+      </div>
     </div>
   );
 };
