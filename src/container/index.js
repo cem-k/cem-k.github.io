@@ -13,5 +13,5 @@ export {
     Footer,
     Contact,
     Demo,
-    Benefits,
+    Benefits
 };
