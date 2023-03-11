@@ -25,18 +25,21 @@ const Header = () => {
 
   return (
     <div className="header" id="Home">
-      <div className="headertext">
-        <h1>Seat Map made&nbsp;</h1>
-        <span key={scrollContent} className="inner-headings gradient">
-          {scrollContent}
-        </span>
+      <div className="twoThirds">
+        <div className="headertext">
+          <h1>Seat Map made&nbsp;</h1>
+          <span key={scrollContent} className="inner-headings gradient">
+            {scrollContent}
+          </span>
+        </div>
+        <div className="description">
+          <span>
+            Create your seat maps in a few clicks, as often as you want, with
+            our easy-to-use solution.
+          </span>
+        </div>
       </div>
-      <div className="description">
-        <span>
-          Create your seat maps in a few clicks, as often as you want, with our
-          easy-to-use solution.
-        </span>
-      </div>
+      <div className="aThird"></div>
     </div>
   );
 };

@@ -103,20 +103,39 @@ button {
 
 .header {
   min-height: 60vh;
-  padding-top: 8%;
-  background-image: url('./assets/classroom.jpg');
+  display: flex;
+  background-color: white;
+}
+
+.aThird {
+  width: 33.3%;
+  background-image: url('./assets/teacher.png');
   background-size: cover; /* make sure the image covers the entire container */
   background-position: center;
+}
+
+.twoThirds {
+  width: 66.6%;
+  margin: auto;
 }
 
 .headertext{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 600;
   margin-bottom: 0;
   margin-top: 0em;
+  margin: 1em;
+}
+
+.description {
+  font-size: 1.2em;
+  padding: 1em;
+  margin: 2em;
+  color: rgb(5,24,43);
+  display: inline-block;
 }
 
 .inner-headings {
@@ -132,9 +151,14 @@ button {
 }
 
 @media only screen and (max-width: 900px) {
-  .headertext {
+  .header, .headertext {
     flex-direction: column;
   }
+
+  .aThird, .twoThirds {
+    width: 100%;
+  }
+
   .headertext p{
     margin: 5% 5% 0 5%;
   }
@@ -143,15 +167,6 @@ button {
   }
 }
 
-.description {
-  font-size: 1.2em;
-  padding: 1em;
-  margin: 2em;
-  border-radius: 0.5em;
-  color: rgb(5,24,43);
-  display: inline-block;
-  background-color: white;
-}
 
 /*
 .header button {
@@ -450,7 +465,7 @@ button {
 
 
 .contact input {
-  width: 60%;
+  width: 40%;
   height: 2.5em;
   border: 0.2em solid rgb(255, 129, 66);
   padding-left: 0.5em;
