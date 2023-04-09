@@ -1,21 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cb26e76.css",
-    "main.js": "/static/js/main.b28aba8e.js",
-    "static/media/classroom.jpg": "/static/media/classroom.799090406ee64b348a0f.jpg",
-    "static/media/smg-home.png": "/static/media/smg-home.6f22331402266440b3b3.png",
-    "static/media/teacher.png": "/static/media/teacher.99e36d628fdb999948e3.png",
-    "static/media/smg-manual.png": "/static/media/smg-manual.c62ca5e03add2f4b206c.png",
-    "static/media/smg-conditions.png": "/static/media/smg-conditions.fe245c279639539b20c3.png",
-    "static/media/smg-createclass.png": "/static/media/smg-createclass.07c7dd16844f48d2248b.png",
-    "static/media/smg-logo.png": "/static/media/smg-logo.1db340e6f1fd5076901d.png",
-    "static/media/smg-makemap.png": "/static/media/smg-makemap.429a2faeaa8bd3d5d135.png",
-    "index.html": "/index.html",
-    "main.5cb26e76.css.map": "/static/css/main.5cb26e76.css.map",
-    "main.b28aba8e.js.map": "/static/js/main.b28aba8e.js.map"
+    "main.css": "/smg-website/static/css/main.4e1b04da.css",
+    "main.js": "/smg-website/static/js/main.4a538252.js",
+    "static/media/smg-conditions.png": "/smg-website/static/media/smg-conditions.fe245c279639539b20c3.png",
+    "static/media/smg-home.png": "/smg-website/static/media/smg-home.1cec10958294b726aeeb.png",
+    "static/media/smg-createclass.png": "/smg-website/static/media/smg-createclass.07c7dd16844f48d2248b.png",
+    "static/media/smg-logo.png": "/smg-website/static/media/smg-logo.1db340e6f1fd5076901d.png",
+    "index.html": "/smg-website/index.html",
+    "main.4e1b04da.css.map": "/smg-website/static/css/main.4e1b04da.css.map",
+    "main.4a538252.js.map": "/smg-website/static/js/main.4a538252.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cb26e76.css",
-    "static/js/main.b28aba8e.js"
+    "static/css/main.4e1b04da.css",
+    "static/js/main.4a538252.js"
   ]
 }
